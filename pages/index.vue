@@ -7,10 +7,15 @@
     <section id="que-hacemos" class="section gray">
       <what-we-do />
     </section>
-    <section id="nosotros" class="section gray-black">
+    <section id="nosotros" class="section gray-x2">
       <us />
     </section>
-    <footer class="footer"></footer>
+    <section id="contacto" class="section">
+      <contact />
+    </section>
+    <footer class="footer gray-x2">
+      <footer-section />
+    </footer>
   </div>
 </template>
 
@@ -19,13 +24,17 @@ import Navbar from '../components/Navbar'
 import Home from '../components/Home'
 import WhatWeDo from '../components/WhatWeDo'
 import Us from '../components/Us'
+import Contact from '../components/Contact'
+import FooterSection from '../components/FooterSection'
 
 export default {
   components: {
     Navbar,
     Home,
     WhatWeDo,
-    Us
+    Us,
+    Contact,
+    FooterSection
   }
 }
 </script>
@@ -45,9 +54,11 @@ section {
 }
 .footer {
   height: 30vh;
-  background-color: blue;
 }
-.gray-black {
+.gray-x2 {
   background-color: #e0e4ee;
+}
+.gray-x3 {
+  background-color: #c0c4d2;
 }
 </style>

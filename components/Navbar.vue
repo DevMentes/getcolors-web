@@ -26,7 +26,7 @@
             <a href="#nosotros" class="nav-link">Nosotros</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contacto</a>
+            <a class="nav-link" href="#contacto">Contacto</a>
           </li>
           <li class="nav-item">
             <a href="#" class="nav-link">Desarrolladores</a>
