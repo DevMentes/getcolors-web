@@ -23,6 +23,16 @@ module.exports = {
           'Somos un grupo de desarrolladores de software, donde analizamos y diseñamos mejoras y soluciones' +
           ' para dar potencia a tu negocio. Formamos y ayudamos a los desarrolladores para que puedan resolver' +
           ' sus problemas utilizando tendencias actuales de desarrollo y buenas prácticas.'
+      },
+      {
+        src:
+          'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js',
+        type: 'text/javascript'
+      },
+      {
+        src:
+          'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js',
+        type: 'text/javascript'
       }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
@@ -56,5 +66,8 @@ module.exports = {
      ** You can extend webpack config here
      */
     extend(config, ctx) {}
+  },
+  workbox: {
+    offlineStrategy: 'OfflineFirst'
   }
 }
