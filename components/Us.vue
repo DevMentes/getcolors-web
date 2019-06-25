@@ -33,7 +33,7 @@
     <div class="col-sm-12 col-md-6 center-item">
       <img
         class="main-image"
-        src="~/assets/images/Programmers-image.jpg"
+        src="~/assets/images/developer-programming.jpg"
         alt="Software development"
       />
       <a class="author-url" href="http://www.freepik.com"
@@ -55,6 +55,9 @@ export default {
 </script>
 
 <style scoped>
+.row {
+  width: 100%;
+}
 h1 {
   font-size: 26px;
 }

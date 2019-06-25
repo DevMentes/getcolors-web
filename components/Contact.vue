@@ -2,32 +2,39 @@
   <div class="row full-height">
     <div class="col-sm-12 center-item">
       <div class="main-text center-item">
-        <div class="form">
+        <div class="form col-md-5 col-sm-12">
           <h1 class="title">¿Necesitas nuestra ayuda?</h1>
           <p>
             Contactanos mediante este formulario, te responderemos rápidamente.
           </p>
           <form>
-            <input
-              type="text"
-              class="form-control custom-input"
-              placeholder="Nombre"
-            />
-            <input
-              type="text"
-              class="form-control custom-input"
-              placeholder="Teléfono"
-            />
-            <input
-              type="text"
-              class="form-control custom-input"
-              placeholder="Asunto"
-            />
-            <textarea
-              class="form-control custom-input"
-              placeholder="Cuentanos que necesitas..."
-              rows="5"
-            />
+            <div class="form-group">
+              <label for="name">Nombre:</label>
+              <input
+                id="name"
+                type="text"
+                class="form-control custom-input"
+                placeholder="Nombre"
+              />
+            </div>
+            <div class="form-group">
+              <label for="phone">Teléfono:</label>
+              <input
+                id="phone"
+                type="text"
+                class="form-control custom-input"
+                placeholder="Teléfono"
+              />
+            </div>
+            <div class="form-group">
+              <label for="text">¿Que necesitas?</label>
+              <textarea
+                id="text"
+                class="form-control custom-input"
+                placeholder="Cuentanos que necesitas..."
+                rows="5"
+              ></textarea>
+            </div>
             <button class="btn btn-primary">Enviar</button>
           </form>
         </div>
@@ -43,6 +50,9 @@ export default {
 </script>
 
 <style scoped>
+.row {
+  width: 100%;
+}
 h1 {
   font-size: 26px;
 }
@@ -58,11 +68,10 @@ h1 {
 .main-text {
   height: 100%;
   width: 80%;
-  text-align: center;
+  text-align: left;
 }
 .form {
   margin-top: 4%;
-  width: 40%;
   height: auto;
   border: 1px solid gray;
   border-radius: 10px;
@@ -71,7 +80,6 @@ h1 {
 }
 .custom-input {
   border-radius: 10px;
-  margin: 10px;
 }
 .btn {
   margin: 20px;

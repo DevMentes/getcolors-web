@@ -8,7 +8,7 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'Desarrollo de software - GetColors',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -19,7 +19,10 @@ module.exports = {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
+        content:
+          'Somos un grupo de desarrolladores de software, donde analizamos y diseñamos mejoras y soluciones' +
+          ' para dar potencia a tu negocio. Formamos y ayudamos a los desarrolladores para que puedan resolver' +
+          ' sus problemas utilizando tendencias actuales de desarrollo y buenas prácticas.'
       }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]

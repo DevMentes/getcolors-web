@@ -51,6 +51,7 @@ export default {
   right: 0;
   z-index: 3;
   height: 10vh;
+  width: 100%;
 }
 .nav-item:hover {
   color: #6927ff;

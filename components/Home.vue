@@ -1,23 +1,21 @@
 <template>
-  <div class="row full-height">
-    <div class="col-sm-12 col-md-6 center-item">
-      <div class="main-text center-item">
-        <h1 class="title">{{ mainTitle }}</h1>
-        <p>{{ mainMessage }}</p>
-        <button class="btn btn-primary">Contactanos aquí</button>
+  <section id="inicio" class="section">
+    <div class="row full-height">
+      <div class="col-sm-12 col-md-6 center-item">
+        <div class="main-text center-item"></div>
+      </div>
+      <div class="col-sm-12 col-md-6 center-item">
+        <img
+          class="main-image"
+          src="~/assets/images/web-development.jpg"
+          alt="Software development"
+        />
+        <a class="author-url" href="http://www.freepik.com"
+          >Imagen diseñada por Freepik</a
+        >
       </div>
     </div>
-    <div class="col-sm-12 col-md-6 center-item">
-      <img
-        class="main-image"
-        src="~/assets/images/main-image.jpg"
-        alt="Software development"
-      />
-      <a class="author-url" href="http://www.freepik.com"
-        >Imagen diseñada por Freepik</a
-      >
-    </div>
-  </div>
+  </section>
 </template>
 
 <script>
@@ -34,6 +32,9 @@ export default {
 </script>
 
 <style scoped>
+.row {
+  width: 100%;
+}
 h1 {
   font-size: 26px;
 }
