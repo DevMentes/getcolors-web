@@ -387,7 +387,7 @@ section {
 }
 footer {
   min-height: 30vh;
-  padding: 20px 0;
+  padding: 20px 5px;
 }
 .purple {
   background-color: #6927ff;
