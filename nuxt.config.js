@@ -31,7 +31,7 @@ module.exports = {
       },
       {
         src:
-          'https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js',
+          'https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js',
         type: 'text/javascript'
       }
     ],
