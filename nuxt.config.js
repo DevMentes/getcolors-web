@@ -75,5 +75,10 @@ module.exports = {
   },
   workbox: {
     offlineStrategy: 'OfflineFirst'
+  },
+  manifest: {
+    name: 'Desarrollo de Software - GetColors',
+    short_name: 'GetColors',
+    background_color: '#6927ff'
   }
 }
