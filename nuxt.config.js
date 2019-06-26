@@ -26,13 +26,7 @@ module.exports = {
       },
       {
         src:
-          'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js',
-        type: 'text/javascript'
-      },
-      {
-        src:
-          'https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js',
-        type: 'text/javascript'
+          'https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js'
       }
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
@@ -56,7 +50,19 @@ module.exports = {
     // Doc: https://bootstrap-vue.js.org/docs/
     'bootstrap-vue/nuxt',
     '@nuxtjs/pwa',
-    '@nuxtjs/eslint-module'
+    '@nuxtjs/eslint-module',
+    [
+      'nuxt-fontawesome',
+      {
+        component: 'fa',
+        imports: [
+          {
+            set: '@fortawesome/free-solid-svg-icons',
+            icons: ['fas']
+          }
+        ]
+      }
+    ]
   ],
   /*
    ** Build configuration

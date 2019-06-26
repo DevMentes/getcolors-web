@@ -43,7 +43,7 @@
               <div
                 class="icon d-flex align-items-center justify-content-center order-md-last"
               >
-                <span class="flaticon-cloud"></span>
+                <span class="flaticon-cloud">1</span>
               </div>
               <div class="media-body pl-4 pl-md-0 pr-md-4 text-md-right">
                 <h3 class="heading">Analizamos tu negocio</h3>
@@ -60,7 +60,7 @@
               <div
                 class="icon d-flex align-items-center justify-content-center"
               >
-                <span class="flaticon-server"></span>
+                <span class="flaticon-server">2</span>
               </div>
               <div class="media-body pl-4">
                 <h3 class="heading">Potenciamos tus ideas</h3>
@@ -77,7 +77,7 @@
               <div
                 class="icon d-flex align-items-center justify-content-center order-md-last"
               >
-                <span class="flaticon-customer-service"></span>
+                <span class="flaticon-customer-service">3</span>
               </div>
               <div class="media-body pl-4 pl-md-0 pr-md-4 text-md-right">
                 <h3 class="heading">Proponemos una solución</h3>
@@ -94,7 +94,7 @@
               <div
                 class="icon d-flex align-items-center justify-content-center"
               >
-                <span class="flaticon-life-insurance"></span>
+                <span class="flaticon-life-insurance">4</span>
               </div>
               <div class="media-body pl-4">
                 <h3 class="heading">Desarrollamos el producto</h3>
@@ -220,7 +220,7 @@
         <p class="contact-info">
           Santiago de Chile, 2019. &copy;
         </p>
-        <p class="contact-info">
+        <p class="contact-info greetings">
           Web diseñada, contruida y mantenida por el equipo principal de
           GetColors con todo el amor del mundo.
         </p>
@@ -401,5 +401,8 @@ footer {
 .link:hover {
   color: #e0e4ee;
   text-decoration: none;
+}
+.greetings {
+  font-size: 14px;
 }
 </style>

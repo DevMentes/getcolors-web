@@ -1,40 +1,24 @@
 <template>
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <b-navbar toggleable="lg" type="dark" variant="info">
     <div class="container">
-      <a class="navbar-brand" href="/">GetColors</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
+      <b-navbar-brand class="brand" href="#inicio">GetColors</b-navbar-brand>
+      <b-navbar-toggle target="nav-collapse"
+        ><fa icon="bars" class="burger"
+      /></b-navbar-toggle>
 
-      <div class="collapse navbar-collapse" id="ftco-nav">
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item active">
-            <a href="#" class="nav-link">Inicio</a>
-          </li>
-          <li class="nav-item">
-            <a href="#que-hacemos" class="nav-link">¿Que hacemos?</a>
-          </li>
-          <li class="nav-item">
-            <a href="#nosotros" class="nav-link">Nosotros</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contacto">Contacto</a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link">Desarrolladores</a>
-          </li>
-        </ul>
-      </div>
+      <b-collapse id="nav-collapse" is-nav>
+        <!-- Right aligned nav items -->
+        <b-navbar-nav class="ml-auto">
+          <b-nav-item class="nav-link" href="#inicio">Inicio</b-nav-item>
+          <b-nav-item class="nav-link" href="#que-hacemos"
+            >¿Que hacemos?</b-nav-item
+          >
+          <b-nav-item class="nav-link" href="#nosotros">Nosotros</b-nav-item>
+          <b-nav-item class="nav-link" href="#contacto">Contacto</b-nav-item>
+        </b-navbar-nav>
+      </b-collapse>
     </div>
-  </nav>
+  </b-navbar>
 </template>
 
 <script>
@@ -53,7 +37,29 @@ export default {
   height: 10vh;
   width: 100%;
 }
+.brand {
+  color: black;
+}
+.burger {
+  color: black;
+}
+.burger:hover {
+  color: #6927ff;
+}
+.brand:hover {
+  color: black;
+}
 .nav-item:hover {
   color: #6927ff;
+}
+.navbar-nav {
+  background-color: white;
+}
+.nav-link {
+  color: black !important;
+  margin-left: 10px;
+}
+.nav-link:hover {
+  color: #6927ff !important;
 }
 </style>
