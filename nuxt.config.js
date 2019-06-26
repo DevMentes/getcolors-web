@@ -77,8 +77,12 @@ module.exports = {
     offlineStrategy: 'OfflineFirst'
   },
   manifest: {
-    name: 'Desarrollo de Software - GetColors',
+    name: 'Desarrollo de Software  - GetColors',
     short_name: 'GetColors',
-    background_color: '#6927ff'
+    theme_color: '#6927ff',
+    background_color: '#6927ff',
+    display: 'standalone',
+    scope: '/',
+    start_url: '/'
   }
 }
