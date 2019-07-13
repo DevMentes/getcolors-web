@@ -163,13 +163,14 @@
           <p>
             Contactanos mediante este formulario, te responderemos rápidamente.
           </p>
-          <form>
+          <form action="https://formspree.io/kmilo93sd@gmail.com" method="POST">
             <div class="form-group">
               <label for="name">Nombre:</label>
               <input
                 id="name"
                 type="text"
                 class="form-control custom-input"
+                name="name"
                 placeholder="Nombre"
               />
             </div>
@@ -179,6 +180,7 @@
                 id="phone"
                 type="text"
                 class="form-control custom-input"
+                name="phone"
                 placeholder="Teléfono"
               />
             </div>
@@ -188,6 +190,7 @@
                 id="text"
                 class="form-control custom-input"
                 placeholder="Cuentanos que necesitas..."
+                name="what-you-need"
                 rows="5"
               ></textarea>
             </div>
