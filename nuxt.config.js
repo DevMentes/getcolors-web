@@ -14,7 +14,7 @@ module.exports = {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       {
         name: 'google-site-verification',
-        content: 'ybUsQcISx_foeQuzo-vNtzobakl0mOFkmtsOayXip04'
+        content: 'lYX83jbxMB6a2CwrbbODzaJDDmIn7w38DusOKD8fcvE'
       },
       {
         hid: 'description',

@@ -163,7 +163,7 @@
           <p>
             Contactanos mediante este formulario, te responderemos rápidamente.
           </p>
-          <form action="https://formspree.io/kmilo93sd@gmail.com" method="POST">
+          <form>
             <div class="form-group">
               <label for="name">Nombre:</label>
               <input
