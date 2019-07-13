@@ -8,7 +8,7 @@ module.exports = {
    ** Headers of the page
    */
   head: {
-    title: 'Desarrollo de software - GetColors',
+    title: 'Desarrollo de software - DevMentes',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -77,8 +77,8 @@ module.exports = {
     offlineStrategy: 'OfflineFirst'
   },
   manifest: {
-    name: 'Desarrollo de Software  - GetColors',
-    short_name: 'GetColors',
+    name: 'Desarrollo de Software  - DevMentes',
+    short_name: 'DevMentes',
     theme_color: '#6927ff',
     background_color: '#6927ff',
     display: 'standalone',

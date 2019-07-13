@@ -1,7 +1,7 @@
 <template>
   <b-navbar toggleable="lg" type="dark" variant="info">
     <div class="container">
-      <b-navbar-brand class="brand" href="#inicio">GetColors</b-navbar-brand>
+      <b-navbar-brand class="brand" href="#inicio">DevMentes</b-navbar-brand>
       <b-navbar-toggle target="nav-collapse"
         ><fa icon="bars" class="burger"
       /></b-navbar-toggle>

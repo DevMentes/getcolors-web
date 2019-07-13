@@ -114,9 +114,9 @@
       <div class="row">
         <div class="col-sm-12 col-md-6 center-item">
           <div class="center-text center-item">
-            <h1 class="title">¿Que es GetColors?</h1>
+            <h1 class="title">¿Que es DevMentes?</h1>
             <p>
-              GetColors nació como una idea para reunir y formar desarrolladores
+              DevMentes nació como una idea para reunir y formar desarrolladores
               mediante la difusión de buenas prácticas de desarrollo y trabajo
               en equipo.
             </p>
@@ -211,7 +211,7 @@
         </div>
         <div class="col-sm-6 col-md-3">
           <p class="contact-info">
-            ¿Necesitas algo?: contacto@getcolors.cl
+            ¿Necesitas algo?: contacto@devmentes.cl
           </p>
         </div>
         <div class="d-md-none d-md-block col-sm-3"></div>
@@ -222,7 +222,7 @@
         </p>
         <p class="contact-info greetings">
           Web diseñada, contruida y mantenida por el equipo principal de
-          GetColors con todo el amor del mundo.
+          DevMentes con todo el amor del mundo.
         </p>
       </div>
     </footer>
