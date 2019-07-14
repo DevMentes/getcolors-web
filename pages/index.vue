@@ -163,16 +163,31 @@
           <p>
             Contactanos mediante este formulario, te responderemos rápidamente.
           </p>
-          <form>
+          <form @submit.prevent="submit">
             <div class="form-group">
               <label for="name">Nombre:</label>
               <input
                 id="name"
+                v-model="$v.name.$model"
                 type="text"
                 class="form-control custom-input"
                 name="name"
                 placeholder="Nombre"
+                :class="{ 'is-invalid': $v.name.$error }"
               />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input
+                id="email"
+                v-model.lazy="$v.email.$model"
+                type="email"
+                class="form-control custom-input"
+                name="email"
+                placeholder="Email"
+                :class="{ 'is-invalid': $v.email.$error }"
+              />
+              <p class="text-danger" v-if="!$v.email.email">Email icorrecto</p>
             </div>
             <div class="form-group">
               <label for="phone">Teléfono:</label>
@@ -181,20 +196,26 @@
                 type="text"
                 class="form-control custom-input"
                 name="phone"
-                placeholder="Teléfono"
+                placeholder="Teléfono Opcional"
               />
             </div>
             <div class="form-group">
               <label for="text">¿Que necesitas?</label>
               <textarea
                 id="text"
+                v-model="$v.whatYouNeed.$model"
                 class="form-control custom-input"
                 placeholder="Cuentanos que necesitas..."
-                name="what-you-need"
+                name="whatYouNeed"
                 rows="5"
               ></textarea>
+              <p class="text-danger" v-if="!$v.whatYouNeed.minLength">
+                Escribir al menos 10 letras
+              </p>
             </div>
-            <button class="btn btn-primary">Enviar</button>
+            <button class="btn btn-primary" :disabled="$v.$invalid">
+              Enviar
+            </button>
           </form>
         </div>
         <div class="d-sm-none d-md-block col-md-3"></div>
@@ -213,16 +234,12 @@
           <p class="developer-link">¿Eres desarrollador? Entra aquí</p>
         </div>
         <div class="col-sm-6 col-md-3">
-          <p class="contact-info">
-            ¿Necesitas algo?: contacto@devmentes.cl
-          </p>
+          <p class="contact-info">¿Necesitas algo?: contacto@devmentes.cl</p>
         </div>
         <div class="d-md-none d-md-block col-sm-3"></div>
       </div>
       <div class="text-box">
-        <p class="contact-info">
-          Santiago de Chile, 2019. &copy;
-        </p>
+        <p class="contact-info">Santiago de Chile, 2019. &copy;</p>
         <p class="contact-info greetings">
           Web diseñada, contruida y mantenida por el equipo principal de
           DevMentes con todo el amor del mundo.
@@ -233,11 +250,46 @@
 </template>
 
 <script>
+import { required, email, minLength } from 'vuelidate/lib/validators'
 import Navbar from '../components/Navbar'
 
 export default {
   components: {
     Navbar
+  },
+  data() {
+    return {
+      name: '',
+      email: '',
+      whatYouNeed: ''
+    }
+  },
+  validations: {
+    name: {
+      required
+    },
+    email: {
+      required,
+      email
+    },
+    whatYouNeed: {
+      required,
+      minLength: minLength(10)
+    }
+  },
+  methods: {
+    submit() {
+      // eslint-disable-next-line no-console
+      console.log('submit!')
+      this.$v.$touch()
+      if (this.$v.$invalid) {
+        // eslint-disable-next-line no-console
+        console.log('Se genero un error')
+      } else {
+        // eslint-disable-next-line no-console
+        console.log('Todos los campos correctos')
+      }
+    }
   }
 }
 </script>
